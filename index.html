@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+   
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c025b47e7.js" crossorigin="anonymous"></script>
+
+    
+
+
+    
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div class="slide-container">
+            <nav id="sidebar">
+            
+                <div class="sidebar-header">
+                    <h3>NEOS</h3>
+                    
+                </div>
+    
+                <ul class="list-unstyled components-list">
+                    <li >
+                      <li>
+                        <a href="#homeSubmenu">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                      </li>
+                      <!-- CUSTOMİZE -->
+
+                       <li class="companents">
+                            <a href="#">
+                                <i class="fas fa-image"></i>
+                                        Customize
+                             </a>
+                        <ul>
+                            <li>
+                                <a href="#">Color</a>
+                            </li>
+                            <li>
+                                <a href="#">Card</a>
+                            </li>
+                        </ul>    
+                       </li>
+                       <!-- LAYOUT -->
+                       <li class="companents">
+                            <a href="#">
+                                <i class="fa-solid fa-fan m-0 p-0"></i>
+                                        Layout
+                             </a>
+                        <ul>
+                            <li>
+                                <a href="#">Containers</a>
+                            </li>
+                            <li>
+                                <a href="#">Grid</a>
+                            </li>
+                            <li>
+                                <a href="#">Columns</a>
+                            </li>
+                            <li>
+                                <a href="#">CSS Grid</a>
+                            </li>
+                        </ul>    
+                       </li>
+                       <!-- FORMS -->
+                       <li class="companents">
+                        <a href="#">
+                            <i class="fa-solid fa-list  m-0 p-0"></i>
+                                    Forms
+                         </a>
+                    <ul>
+                        <li>
+                            <a href="#">Select</a>
+                        </li>
+                        <li>
+                            <a href="#">Checks & radios</a>
+                        </li>
+                        <li>
+                            <a href="#">Input group</a>
+                        </li>
+                        <li>
+                            <a href="#">Floating labels</a>
+                        </li>
+                    </ul>    
+                   </li>
+                         <!-- COMPANENTS -->
+                        <li class="companents">
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="fas fa-briefcase"></i>
+                                
+                                Companents
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="#">Buttons hover</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button group</a>
+                                </li>
+                                <li>
+                                    <a href="#">Card</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carousel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dropdowns</a>
+                                </li>
+                                <li>
+                                    <a href="#">Navbar</a>
+                                </li>
+                               
+                               
+                            </ul>
+                       
+                        </li>
+                           
+
+                       
+                    </li>
+                    <!-- Functions -->
+                    <li class="companents">
+                        <a href="#">
+                            <i class="fa-regular fa-clone"></i>
+                            
+                            Functions
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">Background</a>
+                            </li>
+                            <li>
+                                <a href="#">Borders</a>
+                            </li>
+                            <li>
+                                <a href="#">Colors</a>
+                            </li>
+                            <li>
+                                <a href="#">Display</a>
+                            </li>
+                            <li>
+                                <a href="#">Flex</a>
+                            </li>
+                            <li>
+                                <a href="#">Float</a>
+                            </li>
+                            <li>
+                                <a href="#">Position</a>
+                            </li>
+                            <li>
+                                <a href="#">Sizing</a>
+                            </li>
+                            <li>
+                                <a href="#">Spacing</a>
+                            </li>
+                            <li>
+                                <a href="#">Text</a>
+                            </li>
+                    </li>
+                    </ul>
+                    
+                    
+                       
+                       
+                      
+                    
+                    <li>
+                      
+                        <a href="#">
+                            
+                            <i class="fa-solid fa-book m-0 p-0"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-question"></i>
+                           SSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-paper-plane"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+    
+            
+            
+        </nav>
+        </div>
+
+        <!--? İÇERİK KISMI  -->
+
+
+        <div class="content-container">
+            <div id="content">
+
+            
+                <!-- <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-neosblue">
+                        
+                        <span><i class="fas fa-align-left"></i></span>
+                    </button>
+                
+
+                </div>
+            -->
+
+                <div class="main">
+                    <h1 class="text-neosblue mt-5">TEXT</h1>
+                    <p class="fw-ligt mt-3 fs-6"> Hizalamayı, kaydırmayı, tasarlamayı ve daha fazlasını kontrol etmek
+                        için ortak metin programlarında kullanbilecek belgeler ve örnekler içermektedir.</p>
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="mt-5 w-100 text-neosblue">Text Alignment</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+                                <p class="text-end">text-end</p>
+                                <p class="text-justify">text-justify</p>
+                                <p class="text-right">text-right</p>
+                                <p class="text-left">text-left</p>
+                                 <p class="text-center ">text-center</p>
+                                <p class="text-start mt-3">text-start</p>
+
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-center"</span><span class="mark">&gt;</span>text-center<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-end"</span><span class="mark">&gt;</span>text-end<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-justify"</span><span class="mark">&gt;</span>text-justify<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-right"</span><span class="mark">&gt;</span>text-right<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-left"</span><span class="mark">&gt;</span>text-left<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-start"</span><span class="mark">&gt;</span>text-start<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+<!-- text-decoration özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="text-neosblue">Text Decoration</h2>
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+                                <p class="text-decoration-line-through mt-3">text-decoration-line-through</p>
+                                <p class="text-decoration-underline mt-3">text-decoration-underline</p>
+                                <p class="text-decoration-none mt-3">text-decoration-none</p>
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code>
+                                  
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-decoration-line-through"</span><span class="mark">&gt;</span>text-decoration-line-through<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-decoration-underline"</span><span class="mark">&gt;</span>text-decoration-underline<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-decoration-none"</span><span class="mark">&gt;</span>text-decoration-none<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+  <!-- Font-size özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Font-Size</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+                                <p class="fs-0 mt-3">Neos</p>
+                                <p class="fs-1 mt-3">Neos</p>
+                                <p class="fs-2 mt-3">Neos</p>
+                                <p class="fs-3 mt-3">Neos</p>
+                                 <p class="fs-4 mt-3">Neos</p>
+                                <p class="fs-5 mt-3">Neos</p>
+                                <p class="fs-6 mt-3">Neos</p>
+
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-0"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-1"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-2"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-3"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-4"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-5"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fs-6"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+                            </code>
+                              </pre>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Font-weight özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Font-Weight</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+                                <p class="fw-bold mt-3">Neos</p>
+                                <p class="fw-normal mt-3">Neos</p>
+                                <p class="fw-light mt-3">Neos</p>
+                            
+
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-bold"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-normal"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-light"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+ 
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
+<!-- Line-Height özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Line-Height</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+                                <p class="lh-1 mt-3">Binlerce başarılı mezunu ve dünya genelinde az bulunur niteliklere sahip uzman kadrosuyla ”Türkiye’nin En İyi Yazılım Akademisi” ödülünün sahibi Neos Yazılım Akademi; İstanbul, Ankara, İzmir ve Bursa şubelerinde yüz yüze yazılım eğitimleri ve dünyanın her yerindeki katılımcıları için online yazılım kursları sunmaktadır.</p>
+                                <p class="lh-base mt-3">Binlerce başarılı mezunu ve dünya genelinde az bulunur niteliklere sahip uzman kadrosuyla ”Türkiye’nin En İyi Yazılım Akademisi” ödülünün sahibi Neos Yazılım Akademi; İstanbul, Ankara, İzmir ve Bursa şubelerinde yüz yüze yazılım eğitimleri ve dünyanın her yerindeki katılımcıları için online yazılım kursları sunmaktadır.</p>
+                                <p class="lh-lg mt-3">Binlerce başarılı mezunu ve dünya genelinde az bulunur niteliklere sahip uzman kadrosuyla ”Türkiye’nin En İyi Yazılım Akademisi” ödülünün sahibi Neos Yazılım Akademi; İstanbul, Ankara, İzmir ve Bursa şubelerinde yüz yüze yazılım eğitimleri ve dünyanın her yerindeki katılımcıları için online yazılım kursları sunmaktadır.</p>
+                            
+
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-bold"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-normal"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"fw-light"</span><span class="mark">&gt;</span>Neos<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+ 
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+        </div>
+
+        <!--? İÇERİK KISMI  -->
+    </div>
+
+    
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // const sidebarCollapse = document.getElementById("sidebarCollapse");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent=document.querySelector(".main")
+    
+  
+    // sidebarCollapse.addEventListener("click", function() {
+    //   sidebar.classList.toggle("active");
+    // });
+  });
+  
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 1042) {
+      sidebar.classList.add("active");
+    }
+    else sidebar.classList.remove("active");
+
+  });
+
+</script>
+
+    
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
+
+
