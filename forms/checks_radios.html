@@ -209,7 +209,243 @@
         </nav>
         </div>
 
-       
+        <!--? İÇERİK KISMI  -->
+
+
+        <div class="content-container">
+            <div id="content">
+
+            
+                <!-- <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-neosblue">
+                        
+                        <span><i class="fas fa-align-left"></i></span>
+                    </button>
+                
+
+                </div>
+            -->
+
+            <div class="main">
+                <h1 class="text-neosblue mt-5">Checkboxs Radios</h1>
+                <p class="fw-ligt mt-3 fs-5">Checkbox ve Radio Button HTML form öğeleri, kullanıcıların seçenekler arasından seçim yapmasını sağlayan farklı giriş türleridir.Her iki öğe de HTML form oluştururken kullanılır ve kullanıcıların belirli seçenekler arasından seçim yapmalarına olanak sağlar. Ancak, checkbox birden çok seçeneği işaretlemek için kullanılırken, radio button yalnızca tek bir seçeneği işaretlemek için kullanılır.</p>
+                    </div>
+         
+        
+
+
+<!-- radio2 özellikleri -->
+            <div class="main">
+                <div class="main-item">
+                    <div class="main-title">
+                        <h2 class="text-neosblue">Engellenmiş radio</h2>
+                    </div>
+                    <div class="main-border">
+                        <div class="main-bottom position-relative ">
+
+                            
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" checked>
+                                <label for="radio-1" class="radio-label">Checked</label>
+                              </div>
+                            
+                              <div class="radio">
+                                <input id="radio-2" name="radio" type="radio">
+                                <label for="radio-2" class="radio-label">Unchecked</label>
+                              </div>
+                            
+                              <div class="radio">
+                                <input id="radio-3" name="radio" type="radio" disabled>
+                                <label for="radio-3" class="radio-label">Disabled</label>
+                              </div>
+                              
+                        </div>
+                        <pre class=" main-code fs-5 p-2">
+                            <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-1"</span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="ticket"> type=</span><span class="attr">"radio"</span> <span class="ticket">checked</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-1"</span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;</span>Checked<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-2"</span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="ticket"> type=</span><span class="attr">"radio"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-2"</span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;</span>Unchecked<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-3"</span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="ticket"> type=</span><span class="attr">"radio"</span> <span class="ticket">disable</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-3"</span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;</span>Disabled<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+
+                        </code>
+                          </pre>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-item">
+                    <div class="main-title">
+                        <h2 class="text-neosblue">Radio</h2>
+                    </div>
+                    <div class="main-border">
+                        <div class="main-bottom position-relative ">
+                          
+                            <div class="box">
+                                <input id="two" type="checkbox">
+                                <span class="check"></span>
+                                <label class="box-label" for="two">Hey! Check me.</label>
+                              </div>
+                        </div>
+                        <pre class=" main-code fs-5 p-2">
+                            <code>
+                              
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"box"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"two"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">span class=</span><span class="attr">"check"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">span</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"two"</span><span class="ticket"> class=</span><span class="attr">"box-label"</span><span class="mark">&gt;</span>Hey! Check me.<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+
+
+
+                        </code>
+                          </pre>
+                    </div>
+
+                </div>
+            </div>
+
+<!-- Checkbox1 özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Checkbox-1</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+
+                                <div class="item">
+                                    <div class="toggle-pill-bw">
+                                      <input type="checkbox" id="pill2" name="check">
+                                      <label class="checkbox-text" for="pill2"></label>
+                                    </div>
+                                  </div>
+
+
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"item"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"toggle-pill-bw"</span><span class="ticket"><span class="mark">&gt;</span>
+       <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"pill2"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="ticket"> name=</span><span class="attr">"check"</span><span class="mark">&gt;</span> 
+       <span class="mark">&lt;</span><span class="ticket">label class=</span><span class="attr">"checkbox-text"</span><span class="ticket"> for=</span><span class="attr">"pill2"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Checkbox2 özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Checkbox-2</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+
+        <section title=".slideOne">
+                <div class="slideOne">  
+                    <input type="checkbox" value="None" id="slideThree" name="check" checked >
+                    <label class="text-checkbox" for="slideThree"></label>
+                </div>
+        </section>
+                      </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">section title=</span><span class="attr">".slideOne"</span><span class="mark">&gt;</span> 
+        <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slideOne"</span><span class="mark">&gt;</span>
+            <span class="mark">&lt;</span><span class="ticket">input</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="ticket"> value=</span><span class="attr">"None"</span><span class="ticket"> id=</span><span class="attr">"slideThree"</span><span class="ticket"> name=</span><span class="attr">"check"</span><span class="ticket"> checked</span><span class="mark">&gt;</span>
+            <span class="mark">&lt;</span><span class="ticket">label class=</span><span class="attr">"text-checkbox"</span><span class="ticket"> for=</span><span class="attr">"slideThree"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span> 
+        <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">section</span><span class="mark">&gt;</span>
+ 
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
+<!-- Checkbox3 özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Checkbox-3</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+
+                                <input class="checkbox-input" id="switch" type="checkbox"/>
+                                <label class="toggle-label" for="switch">Toggle</label>  
+                            
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"checkbox-input"</span><span class="ticket"> id=</span><span class="attr">"switch"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span> <span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">label class=</span><span class="attr">"toggle-label"</span><span class="ticket"> for=</span><span class="attr">"switch"</span><span class="mark">&gt;</span>Toggle<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+
+ 
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+<!-- Checkbox4 özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Checkbox-4</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+
+                                <div class="switch">
+                                    <input id="one" class="switcher" type="checkbox" />
+                                    <label for="one" class="sliderer"></label>
+                                </div>
+                            
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"switch"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"one"</span><span class="ticket"> class=</span><span class="attr">"switcher"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span> <span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"one"</span><span class="ticket"> class=</span><span class="attr">"sliderer"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </div>
+        </div>
+
+        <!--? İÇERİK KISMI  -->
     </div>
 
 
