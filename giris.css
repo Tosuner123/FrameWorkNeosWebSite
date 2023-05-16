@@ -190,7 +190,7 @@
     
     
 }
-.copyicon{
+.fa-copy{
     width: 5rem;
     height: 5rem;
     margin-top: 5.6rem;
@@ -210,7 +210,7 @@
    
 }
 
-.copyicon:hover{
+.fa-copy:hover{
     transform: scale(1.2);
     
     
