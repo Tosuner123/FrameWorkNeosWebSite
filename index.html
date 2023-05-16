@@ -51,7 +51,7 @@ background: linear-gradient(to right, #2c3e50, #2c6c96 );">
 
                     </div>
                     <div class="col-2">
-                       <img class="copyicon" src="./img/icons8-copy-48.png" alt="">
+                       <img class="fa-copy" src="./img/icons8-copy-48.png" alt="">
                     </div>
                    </div>
                    <div class="row">
@@ -66,7 +66,7 @@ background: linear-gradient(to right, #2c3e50, #2c6c96 );">
 
                     </div>
                     <div class="col-2">
-                       <img class="copyicon" src="./img/icons8-copy-48.png" alt="">
+                       <img class="fa-copy" src="./img/icons8-copy-48.png" alt="">
                     </div>
                    </div>
                 </div>
@@ -74,5 +74,24 @@ background: linear-gradient(to right, #2c3e50, #2c6c96 );">
 
         
             <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/memetyc/frameWorktoNeos/script.js"></script>
+            <script>
+                const kopyala = document.querySelectorAll('.fa-copy');
+  kopyala.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const koplanacak = e.target.parentElement.previousElementSibling.querySelector('code').innerText;
+      let input = document.createElement('textarea');
+      input.type = 'text';
+      input.value = koplanacak;
+      const scrollY = window.scrollY;
+      document.body.appendChild(input);
+      input.focus();
+      input.select();
+      input.setSelectionRange(0, input.value.length);
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      window.scrollTo(0, scrollY);
+    });
+  });
+            </script>
 </body>
 </html>
