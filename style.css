@@ -3024,5 +3024,27 @@ img[title]:hover:after {
   transform: translateX(-50%);
   white-space: nowrap;
 }
+/* GRİD CSS ÖZELLİKLERİ */
 
+tbody, td, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .table-responsive{
+    padding-right: 24px;
+  }
+  .table-scroll{
+    overflow-x: scroll;
+  }
 
