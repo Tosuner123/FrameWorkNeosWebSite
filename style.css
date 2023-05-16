@@ -2244,43 +2244,149 @@ height: 100% !important;
     .btn.btn-hover-3:hover::before {
         transform: scaleY(1);
     }
-    /*-----------------------CHECKBOX---------------------- */
-  /*   .toggle-pill-bw input[type="checkbox"] {
-        display: none;
-      }
-      .toggle-pill-bw input[type="checkbox"] + label {
-        display: block;
-        position: relative;
-        width: 5rem;
-        height: 2rem;
-        margin-bottom: 2rem;
-        background: var(--gray);
-        border-radius: 1em;
-        cursor: pointer;
-        -webkit-transition:  0.1s ease-in-out;
-        transition:  0.1s ease-in-out;
-      }
-      .toggle-pill-bw input[type="checkbox"] + label:before {
-        content: "";
-        display: block;
-        width: 1.4rem;
-        height: 1.4rem;
-        border-radius: 1rem;
-        background: var(--white);
-        position: absolute;
-        left: 0.4rem;
-        top: 0.3rem;
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-      }
-      .toggle-pill-bw input[type="checkbox"]:checked + label {
-        background:var(--neosblue);
-      }
-      .toggle-pill-bw input[type="checkbox"]:checked + label:before {
-        left: 3.3rem;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-      } */
+  /*-----------------------CHECKBOX---------------------- */
+  .toggle-pill-bw #pill2 {
+    display: none;
+  }
+  .toggle-pill-bw #pill2 + .checkbox-text {
+    display: block;
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    background: var(--gray);
+    border-radius: 1em;
+    cursor: pointer;
+    -webkit-transition:  0.1s ease-in-out;
+    transition:  0.1s ease-in-out;
+  }
+  .toggle-pill-bw #pill2 + .checkbox-text:before {
+    content: "";
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 1rem;
+    background: var(--white);
+    position: absolute;
+    left: 0.4rem;
+    top: 0.3rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .toggle-pill-bw #pill2:checked + .checkbox-text {
+    background:var(--neosblue);
+  }
+  .toggle-pill-bw #pill2:checked + .checkbox-text:before {
+    left: 3.3rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+  .switch {
+    display: block;
+    margin-top: 2.4rem;
+  }
+  
+  .switch .sliderer {
+    position: relative;
+    display: inline-block;
+    height: 8px;
+    width: 32px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    background: var(--gray);
+    transition: all 0.2s ease;
+    margin:0.5rem ;
+  }
+  
+  .switch .sliderer:after {
+    background:var(--gray);
+    position: absolute;
+    left: -0.8rem;
+    top: -0.7rem;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    content: '';
+    transition: all 0.2s ease;
+  }
+  
+  .switch .sliderer {
+    margin-right: 0.7rem;
+  }
+  
+  .switch .switcher {
+    display: none;
+  }
+  
+  .switch .switcher:checked ~ .sliderer:after {
+    left: 2.4rem;
+  }
+  
+  .switch .switcher:checked ~ .sliderer {
+    background: var(--neosblue);
+  }
+  
+  .switch .switcher:checked ~ .sliderer:after {
+    background: var(--neosblue);
+  }
+  /* ---------- CHECKBOX 2 ----------- */
+  
+.slideOne {
+    /* % ye çevirince responsivesi bozuluyor px bırakınca responsivesi bozulmuyor */
+    width: 80px;
+    height: 26px;
+    background:var(--neosblue);
+    
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+    }
+    .slideOne:after {
+    content: 'OFF';
+    color: var(--black);
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    z-index: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+    }
+    .slideOne:before {
+    content: 'ON';
+    color:var(--white);
+    position: absolute;
+    left: 1rem;
+    z-index: 0;
+    font: 1.2rem/2.6rem Arial, sans-serif;
+    font-weight: bold;
+    }
+    .slideOne .text-checkbox {
+    display: block;
+    width: 3.4rem;
+    height: 2.0rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+    z-index: 1;
+    background: var(--white);
+    background:var(--white) ;
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    }
+    .slideOne #slideThree {
+    visibility: hidden;
+    }
+    .slideOne #slideThree:checked + .text-checkbox {
+    left: 4.3rem;
+    }
      /* BORDER KALINLIK ÖZELLİKLERİ*/
     .border-1 {
         border: 0.1rem solid var(--black);
@@ -2491,6 +2597,7 @@ height: 100% !important;
      height: 18rem;
      background: var(--gray);
    }
+   
      /* ---- radio 2 ---- */
 
    
@@ -2551,6 +2658,49 @@ height: 100% !important;
       transition-delay: 0.2s !important;
       transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
   }
+  /* ---------- CHECKBOX 3 ----------- */
+  
+  .checkbox-input{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 55px;
+    height: 30px;
+    background: var(--gray);
+    display: block;
+    border-radius: 10rem;
+    position: relative;
+}
+
+.toggle-label:after {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--white);
+    border-radius: 9rem;
+    transition: 0.3s;
+}
+
+.checkbox-input:checked + .toggle-label {
+    background: var(--neosblue);
+}
+
+.checkbox-input:checked + .toggle-label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.toggle-label:active:after {
+    width: 3rem;
+}
                               /* BTN-HOVER-4 */
 
 .btn.btn-hover-4  {
