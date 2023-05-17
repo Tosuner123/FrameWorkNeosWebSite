@@ -1712,6 +1712,8 @@
         .active{
             display: block !important ;
             text-align: end;
+            background-color:var(--neosblue);
+            color: var(--white);
         }
         /* CARD YAPILARI  */
         /* 1.CARD YAPIMIZ */
