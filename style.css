@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
     
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-list-style-type: none;
-text-decoration: none !important;
-/* font-family: 'Courier New', Courier, monospace;  */
-font-family: 'Jost', sans-serif;
-/* Font family baska bir şeyler değiştirilebilir */
-
-}
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none !important;
+    /* font-family: 'Courier New', Courier, monospace;  */
+    font-family: 'Jost', sans-serif;
+    /* Font family baska bir şeyler değiştirilebilir */
+    
+    }
     html{
         font-size: 62.5%;
+        
+        
     }
 
     /* Font-size kısmımızı her kodumuz için 10px olarak ayarlamıştık.Aşağıdaki kısımda ise her etiket için gerekli px özelliklerini belirlenmiştir. */
@@ -944,7 +947,7 @@ font-family: 'Jost', sans-serif;
     .text-hot{ color: var(--hot) !important;}
     .text-gray{ color: var(--gray) !important;}
     .text-green{color:var(--green) !important;}
-    .text-softgreen{color:var(--softorange) !important;}
+    .text-softorange{color:var(--softorange) !important;}
     .text-yellow{color: var(--yellow) !important;}
     .text-neos-neon{color: var(--neos-neon) !important;}
     
@@ -2932,6 +2935,9 @@ font-family: 'Jost', sans-serif;
         padding: 20px;
         min-height: 100vh;
         transition: all 0.3s;
+        background: #ffffff;
+        
+        
         
     }
 
@@ -2970,8 +2976,11 @@ font-family: 'Jost', sans-serif;
     }
     .main-code{
         max-width: 100%;
-        background-color: rgb(248, 248, 248);
+        /* background-color: rgb(248, 248, 248); */
         overflow: auto;
+        /* background-color: #2f2e2e; */
+        background: #565656;
+        color: white;
         
     
     
@@ -2983,10 +2992,12 @@ font-family: 'Jost', sans-serif;
         text-align: left;
     }
     .ticket{
-        color: var(--neosblue);
+       color: var(--neosblue);
     }
     .attr{
-        color: var(--hot);
+        color: var(--green);
+        
+        /* color: #8b2bb1; */
     }
     .mark{
         color:rgb(198, 196, 196);
@@ -3051,4 +3062,6 @@ font-family: 'Jost', sans-serif;
     .table-scroll{
         overflow-x: scroll;
     }
+
+   
 
