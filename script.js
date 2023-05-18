@@ -1,13 +1,12 @@
-
 // NAVBAR İÇİN
 // Kullanacağım dom yapılarının çağırılması
 
 const collapseItem = document.querySelector('.collapse-item')
 const navbar = document.querySelector('.navbar-logo')
 const menuBtn = document.querySelector('.collapse')
-
+console.log()
 if(navbar){
-    let media = navbar.offsetWidth + collapseItem.offsetWidth + 200
+  let media = navbar.offsetWidth + collapseItem.offsetWidth +400 + navbar.parentElement.parentElement.offsetWidth-navbar.parentElement.offsetWidth
     if(media < 475){
         media = 475
     }
@@ -18,6 +17,7 @@ if(navbar){
     
     // Belirlenen media quary'e göre navbar responsive fonksyonun oluşturulması
     function responsiveNav(e) {
+        console.log(navbar.offsetWidth)
         if (e.matches) {
             collapseItem.classList.add('hidden-collapse')
             menuBtn.style.display='block'
