@@ -3008,6 +3008,9 @@ font-family: 'Jost', sans-serif;
             height: 100px;
             background-color: #f0f0f0;
         }
+        .view{
+            max-width: 100%;
+        }
         /* kopyala yapıştır için html bölgemiz*/
         .kapsayici{
         display: flex;
