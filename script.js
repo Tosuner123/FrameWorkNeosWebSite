@@ -138,92 +138,69 @@ selectGroup.forEach(group => {
 
 
 
-  // ----- CAROUSEL -----
-
-const buttonsWrapper = document.querySelector(".map");
-const slides = document.querySelector(".inner");
-
-if(buttonsWrapper){
-  buttonsWrapper.addEventListener("click", e => {
-    if (e.target.nodeName === "BUTTON") {
-      Array.from(buttonsWrapper.children).forEach(item =>
-        item.classList.remove("caros")
-      );
-      if (e.target.classList.contains("firstes")) {
-        slides.style.transform = "translateX(-0%)";
-        e.target.classList.add("caros");
-      } else if (e.target.classList.contains("second")) {
-        slides.style.transform = "translateX(-33.33333333333333%)";
-        e.target.classList.add("caros");
-      } else if (e.target.classList.contains('third')){
-        slides.style.transform = 'translatex(-66.6666666667%)';
-        e.target.classList.add('caros');
-      }
-    }
-  });
-}
-
-
-// ----- CAROUSEL2 -----
-const slider = document.querySelector('.gallery');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-if(slider){
-  slider.addEventListener('mousedown', e => {
-    isDown = true;
-    slider.classList.add('activite');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener('mouseleave', _ => {
-    isDown = false;
-    slider.classList.remove('activite');
-  });
-  slider.addEventListener('mouseup', _ => {
-    isDown = false;
-    slider.classList.remove('activite');
-  });
-  slider.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const SCROLL_SPEED = 3;
-    const walk = (x - startX) * SCROLL_SPEED;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-}
-
-// ---- CAROUSEL3 ----
+ // ---- CAROUSEL1 ----
 const gap = 50;
 const carousel = document.getElementById("slider-carousel"),
   content = document.getElementById("slider-content"),
   next = document.getElementById("next"),
   prev = document.getElementById("prev");
 
-if(carousel){
-  next.addEventListener("click", e => {
-    carousel.scrollBy(width + gap, 0);
-    if (carousel.scrollWidth !== 0) {
-      prev.style.display = "flex";
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "none";
+  }
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+    prev.style.display = "none";
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "flex";
+  }
+});
+
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+
+
+  // ----- CAROUSEL2 -----
+  "use strict";
+  var _slayt = document.getElementsByClassName("slides");
+  var slaytSayisi = _slayt.length;
+  var slaytNo = 0;
+  var i = 0;
+
+  slaytGoster(slaytNo);
+
+  function nextSlide() {
+    slaytNo++;
+    slaytGoster(slaytNo);
+  }
+
+  function previousSlide() {
+    slaytNo--;
+    slaytGoster(slaytNo);
+  }
+
+  function slaytGoster(slaytNumarasi) {
+    slaytNo = slaytNumarasi;
+
+    if (slaytNumarasi >= slaytSayisi) slaytNo = 0;
+
+    if (slaytNumarasi < 0) slaytNo = slaytSayisi - 1;
+
+    for (i = 0; i < slaytSayisi; i++) {
+      _slayt[i].style.display = "none";
     }
-    if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-      next.style.display = "none";
-    }
-  });
-  prev.addEventListener("click", e => {
-    carousel.scrollBy(-(width + gap), 0);
-    if (carousel.scrollLeft - width - gap <= 0) {
-      prev.style.display = "none";
-    }
-    if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-      next.style.display = "flex";
-    }
-  });
-  
-  let width = carousel.offsetWidth;
-  window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+    _slayt[slaytNo].style.display = "block";
+
 }
 
 
