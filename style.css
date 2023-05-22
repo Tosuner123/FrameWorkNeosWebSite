@@ -2832,7 +2832,7 @@ font-family: 'Jost', sans-serif;
         text-shadow: 0 0  0.1245330156892rem rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
 
         box-shadow: inset 0 0 0.4981320627568rem 0 var(--neos-neon), 0 0 0.4981320627568rem 0 var(--neos-neon);
-
+        white-space: nowrap; /* Yazi kaymasini engeller */
         position: relative;
         min-width: 100px;
         }
