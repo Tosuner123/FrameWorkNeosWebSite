@@ -116,7 +116,7 @@
                                     <a href="../companents/button_group.html">Button group</a>
                                 </li>
                                 <li>
-                                    <a href="../companents/card.html">Card</a>
+                                    <a  href="../companents/card.html">Card</a>
                                 </li>
                                 <li>
                                     <a class="active" href="../companents/carousel.html">Carousel</a>
@@ -212,14 +212,165 @@
         </nav>
         </div>
 
+        <!--? İÇERİK KISMI  -->
+
+
+        <div class="content-container">
+            <div id="content">
+
+            
+                <!-- <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-neosblue">
+                        
+                        <span><i class="fas fa-align-left"></i></span>
+                    </button>
+                
+
+                </div>
+            -->
+
+            <div class="main">
+                <h1 class="text-neosblue mt-5">Carouseller ve Sliderlar</h1>
+                <p class="fw-ligt mt-3 fs-5">Carouseller, kullanıcılara çeşitli içerikleri keşfetme ve etkileşimde bulunma imkanı sunar. Resimler, videolar, metinler veya diğer medya öğeleri gibi farklı içerik türlerini kullanabilir. Kullanıcılar, sağa veya sola doğru kaydırarak içerikleri görüntüleyebilir.</p>
+                    
+         
+        
+
+
+<!-- carousel-1 özellikleri -->
+            
+                <div class="main-item">
+                    <div class="main-title">
+                        <h2 class="text-neosblue">Carousel</h2>
+                    </div>
+                    <div class="main-border">
+                        <div class="main-bottom position-relative ">
+
+                    
+                            <div id="carousel-container">
+                                <div id="slider-carousel">
+                                  <div id="slider-content">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                    <img src="neolabs150.svg" alt="" class="carousel-image">
+                                  </div>
+                                </div>
+                                <button id="prev"><</button>
+                                <button id="next">></button>
+                            
+                            </div>
+                        </div>
+                        
+                </div>
+                        <pre class=" main-code fs-5 p-2">
+                            <code>
+
+<span class="mark">&lt;</span><span class="ticket">div id=</span><span class="attr">"carousel-container"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">div id=</span><span class="attr">"slider-carousel"</span><span class="mark">&gt;</span> 
+        <span class="mark">&lt;</span><span class="ticket">div id=</span><span class="attr">"slider-content"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="ticket"> alt=</span><span class="attr">""</span><span class="ticket"> class=</span><span class="attr">"carousel-image"</span><span class="mark">&gt;</span>
+        <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+          <span class="mark">&lt;</span><span class="ticket">button</span><span class="ticket"> id=</span><span class="attr">"prev"</span><span class="mark">&gt;</span><<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">button</span><span class="ticket"> id=</span><span class="attr">"next"</span><span class="mark">&gt;</span>><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                          <div class="main-html d-flex pt-2 p-2 ">
+                            <p class="text-black fs-6 fw-normal mt-2 ">HTML</p>
+                        <div class="d-flex ms-auto">
+                            <button type="button" class="p-1">
+                                <i class="fa-solid fa-copy "></i>
+                            </button>
+                        </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+
+<!-- Checkbox1 özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="m-0 d-inline-block pt-5 text-neosblue">Slider</h2>
+
+                        </div>
+                        <div class="main-border">
+                            <div class="main-bottom position-relative ">
+
+    <div id="slider">
+        <div class="slides"><img src="" /><h2 class="slide-title">Slide #1</h2></div>
+        <div class="slides"><img src="" /><h2 class="slide-title">Slide #2</h2></div>
+        <div class="slides"><img src="" /><h2 class="slide-title">Slide #3</h2></div>
+        <div class="slides"><img src="" /><h2 class="slide-title">Slide #4</h2></div>
+        <div id="control">
+            <a class="prev" href="javascript:previousSlide()"><</a>
+            <a class="next" href="javascript:nextSlide()">></a>
+        </div>
+    </div>
+                            </div>
+                            <pre class=" main-code fs-5 p-2">
+                                <code >
+                                    <span></span>
+<span class="mark">&lt;</span><span class="ticket">div id=</span><span class="attr">"slider"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slides"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">h2 class=</span><span class="attr">"slide-title"</span><span class="mark">&gt;</span>Slide #1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slides"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">h2 class=</span><span class="attr">"slide-title"</span><span class="mark">&gt;</span>Slide #2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slides"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">h2 class=</span><span class="attr">"slide-title"</span><span class="mark">&gt;</span>Slide #3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slides"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">img src=</span><span class="attr">"#"</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="ticket">h2 class=</span><span class="attr">"slide-title"</span><span class="mark">&gt;</span>Slide #4<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div id=</span><span class="attr">"control"</span><span class="mark">&gt;</span> 
+    <span class="mark">&lt;</span><span class="ticket">a class=</span><span class="attr">"prev"</span><span class="ticket"> href=</span><span class="attr">"javascript:previousSlide()"</span><span class="mark">&gt;</span><<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">a class=</span><span class="attr">"prev"</span><span class="ticket"> href=</span><span class="attr">"javascript:nextSlide()"</span><span class="mark">&gt;</span>><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                              <div class="main-html d-flex pt-2 p-2 ">
+                                <p class="text-black fs-6 fw-normal mt-2 ">HTML</p>
+                            <div class="d-flex ms-auto">
+                                <button type="button" class="p-1">
+                                    <i class="fa-solid fa-copy "></i>
+                                </button>
+                            </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+        </div>
+
        
+        <!--? İÇERİK KISMI  -->
     </div>
 
 
 
 
 
+   
     <script src="../sidebar/sidebar.js"></script>
     <script src="../script.js"></script>
+    
+       
 </body>
 </html>
