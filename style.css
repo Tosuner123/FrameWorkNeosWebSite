@@ -2591,6 +2591,54 @@ font-family: 'Jost', sans-serif;
                    width: 18rem;
                    height:18rem;
             }
+              /* --- slider-2 ---- */
+
+            #slider {
+                margin: 0 auto;
+                position: relative;
+                width: 60rem;
+                height: 30rem;
+                overflow: hidden;
+                background-color: var(--gray);
+                }
+                #slider .slide-title {
+                font-size: 2.9rem ;
+                display: flex;
+                justify-content: center;
+                margin-top: 12rem;
+                color: var(--white);
+                }
+
+                #control {
+                position: absolute;
+                right: 0;
+                bottom: 1rem;
+                }
+
+                #control .prev,.next {
+                color: var(--white);
+                background-color:var(--neosblue);
+                padding: 1rem;
+                }
+                .next:hover{
+                opacity: 0.5;
+                transition: all ease-in .2s;
+                }
+                .prev:hover{
+                opacity: 0.5;
+                transition: all ease-in .2s;
+
+                }
+                @media screen and (max-width: 810px) {
+                #slider {
+                  width: 100%;
+                  height: auto;
+                }
+                .slide-title{
+                  margin-bottom: 12rem;
+                }
+                }
+
         
             /* ---- radio 2 ---- */
 
