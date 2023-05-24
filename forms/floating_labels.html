@@ -10,13 +10,14 @@
 
     <link rel="stylesheet" href="../sidebar/sidebar.css">
     <link rel="stylesheet" href="../style.css">
-
+   
+   
 
 </head>
 <body>
     <div class="wrapper">
-         <!-- Sidebar  -->
-         <div class="slide-container">
+        <!-- Sidebar  -->
+        <div class="slide-container">
             <nav class="" id="sidebar">
             
                 <div class="sidebar-header h-15">
@@ -52,7 +53,7 @@
                                 <a href="../customize/color.html">Color</a>
                             </li>
                             <li>
-                                <a href="#">Card</a>
+                                <a class="active" href="#">Card</a>
                             </li>
                         </ul>    
                        </li>
@@ -94,7 +95,7 @@
                             <a href="../forms/input_group.html">Input group</a>
                         </li>
                         <li>
-                            <a class="active" href="../forms/floating_labels.html">Floating labels</a>
+                            <a href="../forms/floating_labels.html">Floating labels</a>
                         </li>
                     </ul>    
                    </li>
@@ -212,14 +213,187 @@
         </nav>
         </div>
 
-       
+        <!--? İÇERİK KISMI  -->
+
+
+        <div class="content-container">
+            <div id="content">
+
+                <div class="main">
+                    <h1 class="text-neosblue mt-5">REGISTER LOGIN FORM</h1>
+                    <p class="fw-ligt mt-3 fs-6">Şimdilik 2 adet klasik Register ve Login yapılarımız sizlerle.</p>
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="mt-5 w-100 text-neosblue">Register</h2>
+
+                        </div>
+                        <div class="main-border">
+                            < class="main-bottom position-relative ">
+
+
+                                <form class="register">
+                                    <h2>Register Form</h2>
+                                    <div class="input-group" style="margin-bottom: 10px">
+                                      <span class="input-group-text"><i class="register-icon"></i></span>
+                                      <input
+                                        class="input-register form-details"
+                                        type="text"
+                                        placeholder="Username"
+                                        name="usrnm"
+                                      />
+                                    </div>
+                              
+                                    <div class="input-group" style="margin-bottom: 10px">
+                                      <span class="input-group-text"><i class="register-icon"></i></span>
+                                      <input
+                                        class="input-register form-details"
+                                        type="text"
+                                        placeholder="Email"
+                                        name="email"
+                                      />
+                                    </div>
+                              
+                                    <div class="input-group" style="margin-bottom: 10px">
+                                      <span class="input-group-text"><i class="register-icon"></i></span>
+                                      <input
+                                        class="input-register form-details"
+                                        type="password"
+                                        placeholder="Password"
+                                        name="psw"
+                                      />
+                                    </div>
+                              
+                                    <button type="submit" class="btn form-details bg-neosblue">Register</button>
+                                  </form>
+                                  <div class="kapsayici">  
+                                  <pre class="main-code fs-5 p-2">
+                                    <code>
+&lt;<span class="ticket">form</span> <span class="attr">class=<span class="mark">"register"</span></span>&gt;
+&lt;<span class="ticket">h2</span>&gt;Register Form&lt;<span class="ticket">h2</span>&gt;
+&lt;<span class="ticket">div</span> <span class="attr">class=<span class="mark">"input-group"</span></span> <span class="attr">style=<span class="mark">"margin-bottom: 10px"</span></span>&gt;
+&lt;<span class="ticket">span</span> <span class="attr">class=<span class="mark">"input-group-text"</span></span>&gt;&lt;<span class="ticket">i</span> <span class="attr">class=<span class="mark">"register-icon"</span></span>&gt;&lt;/<span class="ticket">i</span>&gt;&lt;/<span class="ticket">span</span>&gt;
+&lt;<span class="ticket">input</span> <span class="attr">class=<span class="mark">"input-register form-details"</span></span> <span class="attr">type=<span class="mark">"text"</span></span> <span class="attr">placeholder=<span class="mark">"Username"</span></span> <span class="attr">name=<span class="mark">"usrnm"</span></span>/&gt;
+&lt;/<span class="ticket">div</span>&gt;
+&lt;<span class="ticket">div</span> <span class="attr">class=<span class="mark">"input-group"</span></span> <span class="attr">style=<span class="mark">"margin-bottom: 10px"</span></span>&gt;
+&lt;<span class="ticket">span</span> <span class="attr">class=<span class="mark">"input-group-text"</span></span>&gt;&lt;<span class="ticket">i</span> <span class="attr">class=<span class="mark">"register-icon"</span></span>&gt;&lt;/<span class="ticket">i</span>&gt;&lt;/<span class="ticket">span</span>&gt;
+&lt;<span class="ticket">input</span> <span class="attr">class=<span class="mark">"input-register form-details"</span></span> <span class="attr">type=<span class="mark">"text"</span></span> <span class="attr">placeholder=<span class="mark">"Email"</span></span> <span class="attr">name=<span class="mark">"email"</span></span>/&gt;
+&lt;/<span class="ticket">div</span>&gt;
+&lt;<span class="ticket">div</span> <span class="attr">class=<span class="mark">"input-group"</span></span> <span class="attr">style=<span class="mark">"margin-bottom: 10px"</span></span>&gt;
+&lt;<span class="ticket">span</span> <span class="attr">class=<span class="mark">"input-group-text"</span></span>&gt;&lt;<span class="ticket">i</span> <span class="attr">class=<span class="mark">"register-icon"</span></span>&gt;&lt;/<span class="ticket">i</span>&gt;&lt;/<span class="ticket">span</span>&gt;
+&lt;<span class="ticket">input</span> <span class="attr">class=<span class="mark">"input-register form-details"</span></span> <span class="attr">type=<span class="mark">"password"</span></span> <span class="attr">placeholder=<span class="mark">"Password"</span></span> <span class="attr">name=<span class="mark">"psw"</span></span>/&gt;
+&lt;/<span class="ticket">div</span>&gt;
+&lt;<span class="ticket">button</span> <span class="attr">type=<span class="mark">"submit"</span></span> <span class="attr">class=<span class="mark">"btn form-details bg-neosblue"</span></span>&gt;Register&lt;/<span class="ticket">button</span>&gt;
+ &lt;/<span class="ticket">form</span>&gt;</code>
+                                </pre>
+                                <div class="main-html d-flex pt-2 p-2 ">
+                                    <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                                <div class="d-flex ms-auto">
+                                    <button type="button" class="p-1">
+                                        <i class="fa-solid fa-copy "></i>
+                                    </button>
+                                </div>
+                                    
+                                </div>
+                                
+                                
+                        
+                          </div>
+                        
+
+                    </div>
+                </div>
+              </div>
+
+<!-- text-decoration özellikleri -->
+                <div class="main">
+                    <div class="main-item">
+                        <div class="main-title">
+                            <h2 class="text-neosblue">Login</h2>
+                        </div>
+                        <div class="main-border">
+                            < class="main-bottom position-relative ">
+                                <div class="login-form">
+                                    <div class="login-container">
+                                      <h2>Login</h2>
+                                      <form>
+                                        <div class="input-group">
+                                          <div class="input-group-text">@</div>
+                                          <input type="text" placeholder="Email" class="form-details" name="email" required>
+                                        </div>
+                                        <div class="input-group">
+                                          <div class="input-group-text" style="padding: 7.4px">🔒</div>
+                                          <input type="password" placeholder="Password" class="form-details" name="password" required>
+                                        </div>
+                                        <button type="submit" class="login-btn">Login</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                              
+                                    
+                            
+
+                                  <div class="kapsayici">
+                                  <pre class="main-code fs-5 p-2">
+                                    <code>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"login-form"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"login-container"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">h2</span><span class="mark">&gt;</span>Login<span class="mark">&lt;/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">form</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group-text"</span><span class="mark">&gt;</span>@<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span> <span class="ticket">placeholder=</span><span class="attr">"Email"</span> <span class="ticket">class=</span><span class="attr">"form-details"</span> <span class="ticket">name=</span><span class="attr">"email"</span> <span class="ticket">required</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group-text" style="padding: 7.4px"</span><span class="mark">&gt;</span>&#x1F512;<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"password"</span> <span class="ticket">placeholder=</span><span class="attr">"Password"</span> <span class="ticket">class=</span><span class="attr">"form-details"</span> <span class="ticket">name=</span><span class="attr">"password"</span> <span class="ticket">required</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">button type=</span><span class="attr">"submit"</span> <span class="ticket">class=</span><span class="attr">"login-btn"</span><span class="mark">&gt;</span>Login<span class="mark">&lt;/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;/</span><span class="ticket">form</span><span class="mark">&gt;</span>
+ &nbsp;&nbsp;<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                                    </code>
+                                </pre>
+                                <div class="main-html d-flex pt-2 p-2 ">
+                                    <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                                <div class="d-flex ms-auto">
+                                    <button type="button" class="p-1">
+                                        <i class="fa-solid fa-copy "></i>
+                                    </button>
+                                </div>
+                                    
+                                </div>
+                                
+                                
+                                
+                            
+                              
+                        </div>
+
+                    
+                
+
+  <!-- Font-size özellikleri -->
+               
+
+
+
+
+        </div>
+        </div>
+
+        
     </div>
 
+    
+    </div>
+     </div>
+      </div>
 
 
 
 
-<script src="../sidebar/sidebar.js"></script>
-<script src="../script.js"></script>
+
+    <script src="../sidebar/sidebar.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
