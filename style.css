@@ -3207,4 +3207,7 @@ font-family: 'Jost', sans-serif;
         .table-scroll{
             overflow-x: scroll;
         }
+.active{
+    background-color: var(--neosblue);
+}
 
