@@ -24,8 +24,8 @@ if(navbar){
         } else{
             collapseItem.classList.remove('hidden-collapse')
             menuBtn.style.display='none'
-            if(collapseItem.classList.contains('active')){
-                collapseItem.classList.remove('active')
+            if(collapseItem.classList.contains('active-2')){
+                collapseItem.classList.remove('active-2')
             }
         }
     }   
@@ -36,7 +36,7 @@ if(navbar){
     })
     //  icona tıkladığımızda collapse yapısının görünür olması için active clasının eklenmesi
     menuBtn.addEventListener('click',function(){
-        collapseItem.classList.toggle('active')
+        collapseItem.classList.toggle('active-2')
     })
     // Tıklanan yer eğer collapse menu yada icon değilse collapse kısmının tekrar kapanması için
     // composedPath bir dizi döndüyor tıkladığımız şeyden html e kadar
@@ -44,7 +44,7 @@ if(navbar){
         if(
             !e.composedPath().includes(menuBtn) &&
             !e.composedPath().includes(collapseItem)){
-            collapseItem.classList.remove('active')
+            collapseItem.classList.remove('active-2')
         }
     })  
     // fonksyon sayfa ilk açıldığındada çağırılıyor
@@ -199,11 +199,6 @@ window.addEventListener("resize", e => (width = carousel.offsetWidth));
       _slayt[i].style.display = "none";
     }
 
-    _slayt[slaytNo].style.display = "block";
+    _slayt[slaytNo].style.display="block";
 
 }
-
-
-
-
-    
