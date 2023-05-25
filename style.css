@@ -1814,11 +1814,10 @@ font-family: 'Jost', sans-serif;
             .dark{
                 background-color: var(--black);
             }
-            .active{
+            .active-2{
                 display: block !important ;
                 text-align: end;
-                background-color:var(--neosblue);
-                color: var(--white);
+                
             }
             /* CARD YAPILARI  */
             /* 1.CARD YAPIMIZ */
