@@ -45,6 +45,9 @@
   #sidebar::-webkit-scrollbar-thumb {
     background-color: #888;
   }
+.active{
+    background-color: var(--neosblue);
+}
 
 
   
