@@ -15,3 +15,29 @@ const kopyala = document.querySelectorAll('.fa-copy');
       window.scrollTo(0, scrollY);
     });
   });
+
+
+    document.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target.tagName === 'A' && target.getAttribute('href') !== '#') {
+        event.preventDefault();
+
+        const loaderContainer = document.createElement('div');
+        loaderContainer.classList.add('loader-container');
+        loaderContainer.innerHTML = `
+          <div class="spinner">
+            <div class="n-harfi">N</div>
+          </div>
+        `;
+
+        document.body.appendChild(loaderContainer);
+
+        window.addEventListener('load', function() {
+          setTimeout(() => {
+            window.location.href = target.href;
+          }, 3000);
+        });
+      }
+    });
+
+
