@@ -54,7 +54,7 @@ kopyala.forEach(btn =>{
   }); 
 })
 
-                // LOADER
+               // LOADER
 
    
    document.addEventListener('click', function(event) {
