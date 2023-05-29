@@ -18,7 +18,7 @@ const kopyala = document.querySelectorAll('.fa-copy');
 
 
                  // LOADER
-                document.addEventListener('click', function(event) {
+                    document.addEventListener('click', function(event) {
                   const target = event.target;
                   if (target.tagName === 'A' && target.getAttribute('href') !== '#') {
                     event.preventDefault();
@@ -33,13 +33,13 @@ const kopyala = document.querySelectorAll('.fa-copy');
             
                     document.body.appendChild(loaderContainer);
             
-                    setTimeout(() => {
+                    window.onload = function() {
+                      loaderContainer.remove();
                       window.location.href = target.href;
-                    }, 1000);
+                    };
                   }
                 });
-            
-                window.addEventListener('load', function() {
+                document.addEventListener('DOMContentLoaded', function() {
                   const loaderContainer = document.querySelector('.loader-container');
                   if (loaderContainer) {
                     loaderContainer.remove();
